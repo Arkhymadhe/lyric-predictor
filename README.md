@@ -18,7 +18,7 @@
 The dataset comprises text and metadata. The text is a sequence of lyrics from the song, and the metadata is the musci genre the song belongs to (rap or non-rap). As such, this is a binary classificication NLP problem (many-to-one).
 
 ## Training procedure
-The modelling was done via two techniques: first, using an `nn.Embedding` layer with `nn.Linear` layers, and secondly, combining `nn.Embedding` layers, with `nn.LSTRM` layers and `nn.Linear` layers. Training was carried out for 100 epochs in each case, with an `Adam` optimizer and a learning rate of `1e-4` and a batch size of `32`.
+The modelling was done via two techniques: first, using an `nn.Embedding` layer with `nn.Linear` layers, and secondly, combining `nn.Embedding` layers, with `nn.LSTM` layers and `nn.Linear` layers. Training was carried out for 100 epochs in each case, with an `Adam` optimizer and a learning rate of `1e-4` and a batch size of `32`.
 
 ## Performance
 As expected, the LSTM model outperformed the linear model (`~84%` as compared to `~60%` test performance). However, the LSTM is prone to overfitting. This will have to be addressed.
