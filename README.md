@@ -1,7 +1,7 @@
 
 ## Project Title:
 
-### Relative location of CT slices on axial axis (Dataset)
+### Lyric Genre Predictor
 
 ---
 
